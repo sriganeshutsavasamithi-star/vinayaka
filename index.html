@@ -1,7 +1,6 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <body>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sri Ganesh Utsava Samithi</title>
@@ -15,7 +14,7 @@
 /* =========================================
    TOKENS
 ========================================= */
-   
+
 :root{
     --bg-deep:#170B2A;
     --bg-deep2:#2B1042;
@@ -47,7 +46,6 @@ body{
     position:relative;
 }
 
-/* subtle temple-lamp glow ambience, fixed */
 body::before{
     content:"";
     position:fixed;
@@ -65,7 +63,7 @@ body::before{
 }
 
 /* =========================================
-   MARIGOLD GARLAND DIVIDER (signature motif)
+   MARIGOLD GARLAND DIVIDER
 ========================================= */
 .garland{
     height:26px;
@@ -299,83 +297,43 @@ body::before{
    EVENT INFORMATION
 ========================================= */
 .event-info{
-
     max-width:1100px;
-
     margin:50px auto 0;
-
     padding:30px;
-
     border-radius:30px;
-
     text-align:center;
-
-    background:
-    rgba(0,0,0,.45);
-
+    background:rgba(0,0,0,.45);
     backdrop-filter:blur(12px);
-
-    border:
-    1px solid
-    rgba(255,255,255,.25);
-
+    border:1px solid rgba(255,255,255,.25);
 }
-
 
 .event-info h2{
-
     color:#ffd166;
-
     font-size:32px;
-
     margin-bottom:20px;
-
 }
-
 
 .event-grid{
-
     display:grid;
-
-    grid-template-columns:
-    repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
-
 }
-
 
 .info-box{
-
     padding:22px;
-
     border-radius:20px;
-
-    background:
-    rgba(255,255,255,.08);
-
-    border:
-    1px solid
-    rgba(255,255,255,.2);
-
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
 }
-
 
 .info-box h3{
-
     color:#ffb703;
-
     margin-bottom:8px;
-
 }
-
 
 .info-box p{
-
     line-height:1.6;
-
 }
-
 
 /* =========================================
    BACK BUTTON
@@ -437,7 +395,7 @@ body::before{
 }
 
 /* =========================================
-   CTA BUTTON (chanda / forms link)
+   CTA BUTTON
 ========================================= */
 .doc-button{
     display:inline-flex;
@@ -481,6 +439,39 @@ body::before{
     color:var(--gold-soft);
     margin:10px 0;
     font-weight:600;
+}
+
+/* =========================================
+   CHANDA COLLECTED COUNTER
+========================================= */
+.collection-box{
+    max-width:420px;
+    margin:26px auto;
+    padding:26px 24px;
+    border-radius:var(--radius-md);
+    text-align:center;
+    background:linear-gradient(160deg, rgba(244,169,58,0.15), rgba(196,39,43,0.08));
+    border:1px solid rgba(244,169,58,0.4);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,0.15), 0 12px 30px rgba(0,0,0,0.35);
+}
+.collection-box .label{
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--coral);
+    font-weight:600;
+    margin-bottom:10px;
+}
+.collection-box .amount{
+    font-family:var(--display-font);
+    font-size:clamp(30px,5vw,42px);
+    color:var(--gold-soft);
+    text-shadow:0 0 16px rgba(244,169,58,0.4);
+}
+.collection-box .updated{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--ivory-dim);
 }
 
 /* =========================================
@@ -612,8 +603,6 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
 
 </style>
 </head>
-
-
 <body>
 
 <!-- =========================================
@@ -685,73 +674,46 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
     </div>
 
     <!-- EVENT DETAILS -->
-   
     <div class="event-info">
 
-        <h2>
-            🌺 EVENT DETAILS 🌺
-        </h2>
+        <h2>🌺 EVENT DETAILS 🌺</h2>
 
         <div class="event-grid">
 
-
             <div class="info-box">
-
-                <h3>
-                    🗓 Event Start
-                </h3>
-
+                <h3>🗓 Event Start</h3>
                 <p>
                     Ganesh Chaturthi<br>
                     Date: 14 / 09 / 2026<br>
                     Time: 06:00 AM
                 </p>
-
             </div>
 
-
             <div class="info-box">
-
-                <h3>
-                    🗓 Event Ending
-                </h3>
-
+                <h3>🗓 Event Ending</h3>
                 <p>
                     Visarjan / Closing Ceremony<br>
                     Date: 22 / 09 / 2026<br>
                     Time: 06:00 PM
                 </p>
-
             </div>
 
-
             <div class="info-box">
-
-                <h3>
-                    🍚 Annadhanam
-                </h3>
-
+                <h3>🍚 Annadhanam</h3>
                 <p>
                     Free Annadhanam for devotees<br>
                     Date: 00 / 09 / 2026<br>
                     Time: 12:00 PM onwards
                 </p>
-
             </div>
 
-
             <div class="info-box">
-
-                <h3>
-                    🍬 Laddu Vellampatta
-                </h3>
-
+                <h3>🍬 Laddu Vellampatta</h3>
                 <p>
                     Prasadam / Laddu Distribution<br>
                     Date: 22 / 09 / 2026<br>
                     Time: 05:00 PM onwards
                 </p>
-
             </div>
 
         </div>
@@ -759,8 +721,6 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
     </div>
 
 </section>
-
-
 
 
 <!-- =========================================
@@ -779,9 +739,15 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
 
         <div class="section-divider">✦ ✦ ✦</div>
 
+        <!-- CHANDA COLLECTED SO FAR -->
+        <div class="collection-box">
+            <div class="label">Chanda Collected</div>
+            <div class="amount" id="chandaAmount">₹0</div>
+            <div class="updated" id="chandaUpdated">Last updated: --</div>
+        </div>
+
         <div class="payment">
             <p>Click The Button To Contribute</p>
-          
         </div>
 
         <div class="doc-button-wrap">
@@ -817,12 +783,13 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
                 <input type="tel" id="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" required>
             </div>
 
+        </form>
 
         <div class="section-divider">✦ ✦ ✦</div>
 
         <div class="doc-button-wrap">
             <a href="https://forms.gle/HeHbT5zZmiG7grzY8" target="_blank" class="doc-button">
-                📄 Click Here 
+                📄 Click Here
             </a>
         </div>
     </div>
@@ -847,8 +814,6 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
                 <h3>S. Govind</h3>
                 <a class="call" href="tel:+918074055747">📞 +91 80740 55747</a>
             </div>
-
-
 
             <div class="member">
                 <img src="naveen.jpeg" alt="S. Naveen">
@@ -885,28 +850,24 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
                 <h3>K. Sai</h3>
                 <a class="call" href="tel:+919966130576">📞 +91 99661 30576</a>
             </div>
-           
-              <div class="member">
+
+            <div class="member">
                 <img src="murali.jpeg" alt="P. Murali Durga Prasad">
                 <h3>P. Murali Durga Prasad</h3>
-                <a class="call" href="tel:+9197011 23411">📞 +91 97011 23411</a>
+                <a class="call" href="tel:+919701123411">📞 +91 97011 23411</a>
             </div>
 
-            
             <div class="member">
                 <img src="eknath.jpeg" alt="Y. Eknath">
                 <h3>Y. Eknath</h3>
-                <a class="call" href="tel:+9180743 76657">📞 +91 80743 76657</a>
+                <a class="call" href="tel:+918074376657">📞 +91 80743 76657</a>
             </div>
 
-             <div class="member">
+            <div class="member">
                 <img src="bunny.jpeg" alt="K. Bunny">
                 <h3>K. Bunny</h3>
                 <a class="call" href="tel:+919603907388">📞 +91 96039 07388</a>
             </div>
-
-
-
 
         </div>
     </div>
@@ -926,6 +887,20 @@ footer .om{ font-size:22px; color:var(--gold); margin-bottom:6px; }
 
 <script>
 
+/* ==========================================
+   CHANDA COLLECTED — EDIT THESE TWO VALUES
+   EACH TIME YOU WANT TO UPDATE THE AMOUNT
+========================================== */
+const CHANDA_COLLECTED = 2200;           // <-- update this number manually
+const CHANDA_LAST_UPDATED = "01 Sep 2026"; // <-- update this date manually
+
+function renderChandaAmount(){
+    const formatted = "₹" + CHANDA_COLLECTED.toLocaleString("en-IN");
+    document.getElementById("chandaAmount").textContent = formatted;
+    document.getElementById("chandaUpdated").textContent = "Last updated: " + CHANDA_LAST_UPDATED;
+}
+renderChandaAmount();
+
 /* PAGE NAVIGATION */
 function openPage(id){
     document.querySelectorAll(".page").forEach(function(page){
@@ -941,18 +916,12 @@ function bookPooja(event){
 
     let name = document.getElementById("devoteeName").value;
     let mobile = document.getElementById("mobile").value;
-    let date = document.getElementById("poojaDate").value;
-    let ritual = document.getElementById("ritual").value;
-    let slot = document.getElementById("slot").value;
 
     alert(
         "🙏 Pooja Booking Request\n\n" +
         "Name: " + name + "\n" +
-        "Mobile: " + mobile + "\n" +
-        "Date: " + date + "\n" +
-        "Ritual: " + ritual + "\n" +
-        "Time Slot: " + slot +
-        "\n\nOur committee will confirm your slot shortly. Please complete the payment using the QR code on the Chanda page."
+        "Mobile: " + mobile +
+        "\n\nOur committee will confirm your slot shortly. Please complete the payment using the QR code / link on the Chanda page."
     );
 
     event.target.reset();
